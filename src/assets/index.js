@@ -25,6 +25,7 @@ import people03 from "./people03.png";
 import robot1 from "./robot1.png";
 import x from './x.svg';
 import cardbg from './card-bg.png';
+import heroImg from './hero-img.png';
 
 export {
   airbnb,
@@ -54,4 +55,5 @@ export {
   robot1,
   x,
   cardbg,
+  heroImg
 };

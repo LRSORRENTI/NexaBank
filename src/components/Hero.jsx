@@ -1,5 +1,5 @@
 import styles from "../style";
-import { discount, robot1 } from "../assets";
+import { discount, robot1, heroImg } from "../assets";
 import GetStarted from "./GetStarted";
 
 const Hero = () => (
@@ -36,9 +36,9 @@ const Hero = () => (
 
     <div className={`flex flex-1 ${styles.flexCenter} relative my-10 md:my-0`}>
       <img
-        src={robot1}
+        src={heroImg}
         alt="billing"
-        className="relative z-[5] h-[100%] w-[100%]"
+        className="relative z-[5] h-[100%] w-[100%] transform -rotate-12 scale-150 transition-transform duration-300 ease-in-out hover:scale-80"
       />
 
       <div className="pink__gradient absolute top-0 z-[0] h-[35%] w-[40%]" />
