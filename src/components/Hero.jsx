@@ -1,5 +1,5 @@
 import styles from "../style";
-import { discount, robot1, heroImg } from "../assets";
+import { discount, heroImg } from "../assets";
 import GetStarted from "./GetStarted";
 
 
