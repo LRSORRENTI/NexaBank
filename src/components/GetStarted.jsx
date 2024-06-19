@@ -4,10 +4,10 @@ import { arrowUp } from "../assets";
 const GetStarted = () => (
   <div
     onClick={() => document.getElementById('cta-section').scrollIntoView({ behavior: 'smooth' })}
-    className={`${styles.flexCenter} bg-blue-gradient h-[140px] w-[140px] cursor-pointer rounded-full p-[2px] transition-opacity duration-200  hover:opacity-80`}
+    className={`${styles.flexCenter} bg-blue-gradient h-[140px] w-[140px] cursor-pointer rounded-full p-[2px] transition-opacity duration-200  hover:opacity-80 z-20`}
   >
     <div
-      className={`${styles.flexCenter} h-[100%] w-[100%] flex-col rounded-full bg-primary`}
+      className={`${styles.flexCenter} h-[100%] w-[100%] flex-col rounded-full bg-slate-950`}
     >
       <div className={`${styles.flexStart} flex-row`}>
         <p className="mr-2 font-poppins text-[18px] font-medium leading-[23px]">
