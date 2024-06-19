@@ -2,9 +2,8 @@ import styles from "../style";
 import { discount, heroImg } from "../assets";
 import GetStarted from "./GetStarted";
 
-
 const Hero = () => (
-  <section id="home" className={`flex flex-col lg:flex-row ${styles.paddingX} relative`}>
+  <section id="home" className={`flex flex-col lg:flex-row ${styles.paddingX} relative z-0`}>
     <div className={`flex-1 flex-col ${styles.flexStart} ms:px-16 px-6 xl:px-0`}>
       <div className="bg-discount-gradient mb-2 flex flex-row items-center rounded-[10px] px-4 py-[6px]">
         <img src={discount} alt="discount" className="h-[32px] w-[32px]" />
@@ -27,15 +26,15 @@ const Hero = () => (
         Our team of experts uses a methodology to identify the credit cards most likely to fit your needs. We examine annual percentage rates, annual fees.
       </p>
     </div>
-    <div className={`flex flex-1 ${styles.flexCenter} relative my-10 md:my-0`}>
+    <div className={`flex flex-1 ${styles.flexCenter} relative my-10 md:my-0 z-0`}>
       <img
         src={heroImg}
         alt="billing"
         className="absolute inset-0 z-0 h-full w-full transform rotate-[345deg] scale-x-150 scale-y-125 transition-transform duration-300 ease-in-out hover:scale-80 left-20 bottom-2"
       />
-      <div className="pink__gradient absolute top-0 z-1 h-[35%] w-[40%]" />
-      <div className="white__gradient absolute bottom-40 z-1 h-[80%] w-[80%] rounded-full" />
-      <div className="blue__gradient absolute bottom-20 z-1 h-[50%] w-[50%]" />
+      <div className="pink__gradient absolute top-0 z-0 h-[35%] w-[40%]" />
+      <div className="white__gradient absolute bottom-40 z-0 h-[80%] w-[80%] rounded-full" />
+      <div className="blue__gradient absolute bottom-20 z-0 h-[50%] w-[50%]" />
     </div>
     <div className={`ss:hidden ${styles.flexCenter}`}>
       {/* <GetStarted /> */}

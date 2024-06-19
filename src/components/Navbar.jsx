@@ -3,11 +3,10 @@ import { useState } from "react";
 import { close, shield, menu } from "../assets";
 import { navLinks } from "../constants";
 
-
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
   return (
-    <nav className="w-full flex py-6 justify-between items-center z-10 relative">
+    <nav className="w-full flex py-6 justify-between items-center relative z-[100]"> {/* Ensure z-index is high */}
       <div className="flex items-center">
         <img src={shield} alt="NexaBank logo" className="w-[90px] h-[50px]" />
         <h2 className="ml-0 text-white text-[24px] font-bold">NexaBank</h2>
@@ -33,7 +32,7 @@ const Navbar = () => {
 
         <div
           className={`${toggle ? "flex" : "hidden"
-            } p-6 bg-black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] rounded-xl sidebar z-10`}
+            } p-6 bg-black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] rounded-xl sidebar z-50`}
         >
           <ul className="list-none flex flex-col justify-end items-center flex-1">
             {navLinks.map((nav, index) => (
