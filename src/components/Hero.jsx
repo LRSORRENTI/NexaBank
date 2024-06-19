@@ -8,7 +8,7 @@ const Hero = () => (
       <div className="bg-discount-gradient mb-2 flex flex-row items-center rounded-[10px] px-4 py-[6px]">
         <img src={discount} alt="discount" className="h-[32px] w-[32px]" />
         <p className={`${styles.paragraph} ml-2`}>
-          <span className="text-white">20%</span> Discount for <span className="text-white">1 Month</span> Account
+          <span className="text-white">20%</span> Discount on your <span className="text-white">1st Month</span>
         </p>
       </div>
       <div className="flex w-full flex-row items-center justify-between">
