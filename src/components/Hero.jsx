@@ -17,7 +17,7 @@ const Hero = () => (
           The Next <br className="hidden sm:block" /> <span className="text-gradient">Generation</span>
         </h1>
         <div className="mr-0 hidden ss:flex md:mr-4">
-          <GetStarted />
+          {/* <GetStarted /> */}
         </div>
       </div>
       <h1 className="w-full font-poppins text-[52px] font-semibold leading-[75px] text-white ss:text-[68px] ss:leading-[100px]">
@@ -38,7 +38,7 @@ const Hero = () => (
       <div className="blue__gradient absolute bottom-20 z-1 h-[50%] w-[50%]" />
     </div>
     <div className={`ss:hidden ${styles.flexCenter}`}>
-      <GetStarted />
+      {/* <GetStarted /> */}
     </div>
   </section>
 );
